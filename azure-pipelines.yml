@@ -1,19 +1,15 @@
-# Instalar dependencias
 - script: |
     python -m venv env
     source env/bin/activate
     pip install -r requirements.txt
   displayName: 'Instalar dependencias'
 
-# Instalar Flask
 - script: |
     source env/bin/activate
     pip install Flask
   displayName: 'Instalar Flask'
 
-# Ejecutar pruebas
 - script: |
     source env/bin/activate
     pytest
   displayName: 'Ejecutar pruebas'
-
